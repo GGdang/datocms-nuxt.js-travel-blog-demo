@@ -14,9 +14,15 @@
         </div>
         <div :class="['navbar-menu', navbarOpen && 'is-active']">
           <div class="navbar-end">
-            <nuxt-link class="navbar-item is-active is-size-5 has-text-weight-semibold" to="/">
+            <nuxt-link
+              class="navbar-item is-active is-size-5 has-text-weight-semibold"
+              to="/"
+            >
               Home
             </nuxt-link>
+            <span>
+              test
+            </span>
           </div>
         </div>
       </div>
@@ -42,14 +48,14 @@
 export default {
   data() {
     return {
-      navbarOpen: false
+      navbarOpen: false,
     }
   },
   methods: {
     toggleNavbar() {
       this.navbarOpen = !this.navbarOpen
-    }
-  }
+    },
+  },
 }
 </script>
 
